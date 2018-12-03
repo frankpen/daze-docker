@@ -1,4 +1,4 @@
-#test0.1
+#test0.1/2018-12-3
 FROM golang:alpine as builder
 RUN apk add --update git
 RUN go get -u -v github.com/mohanson/daze/cmd/daze
