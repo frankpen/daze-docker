@@ -1,4 +1,4 @@
-#v1.1/2018-12-3/自定义密码变量
+#v1.1/2018-12-10/去掉user
 FROM golang:alpine as builder
 RUN apk add --update git
 RUN go get -u -v github.com/mohanson/daze/cmd/daze
@@ -10,7 +10,6 @@ LABEL MAINTAINER Frank <https://github.com/frankpen>
 # /usr/bin/daze
 COPY --from=builder /go/bin /usr/bin
 
-USER nobody
 ENV ARGS="server -l :10200 -e asheshadow"
 #define your password
 ENV PASSWD="password"
