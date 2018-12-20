@@ -1,4 +1,4 @@
-#v_final/2018-12-20/append rule.ls
+#v_final/2018-12-20/append rule.ls  
 FROM golang:alpine as builder
 RUN apk add --update git
 RUN go get -u -v github.com/frankpen/dazel/tree/master/cmd/daze
