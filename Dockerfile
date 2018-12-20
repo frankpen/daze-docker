@@ -1,7 +1,7 @@
 #v1.1/2018-12-20/append rule.ls
 FROM golang:alpine as builder
 RUN apk add --update git
-RUN go get -u -v gthub.com/mohanson/daze/tree/master/cmd/daze
+RUN go get -u -v github.com/mohanson/daze/tree/master/cmd/daze
 
 
 FROM chenhw2/alpine:base
